@@ -1,0 +1,60 @@
+.collapse {
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: transparent;
+
+  &__header {
+    width: 100%;
+    background-color: #ff6060;
+    color: #fff;
+    padding: 15px 20px;           
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;                
+    font-weight: 700;              
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__title {
+    font-weight: inherit;         
+  }
+
+  &__icon-button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+
+  &__icon.open {
+    transform: rotate(180deg);
+  }
+
+  &__content-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+  }
+
+  &__content {
+    padding: 15px;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+}
+
+/* 👉 N’ouvre que le collapse qui a la classe collapse--open */
+.collapse--open .collapse__content-wrapper {
+  max-height: 500px; // suffisant pour ton texte
+}

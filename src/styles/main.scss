@@ -1,0 +1,29 @@
+// src/styles/main.scss
+/* Reset / global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Layout global */
+.app {
+  min-height: 100vh;
+}
+
+/* Imports des autres styles */
+@import "./layout.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./banner.scss";
+@import "./card.scss";
+@import "./home.scss";
+@import "./logement.scss";
+@import "./gallery.scss";
+@import "./collapse.scss";
+@import "./about.scss";

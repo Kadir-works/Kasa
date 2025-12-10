@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: center; // pour centrer le bloc interne
+  padding: 40px 20px 0; // comme sur la maquette : un peu d’air en haut
+  background: #fff;
+
+  &__inner {
+    width: 100%;
+    max-width: 1240px; // largeur max comme la maquette
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 68px; // ajuste si besoin en fonction de ton fichier
+    width: auto;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  text-transform: capitalize;
+
+  &--active {
+    text-decoration: underline;
+  }
+}

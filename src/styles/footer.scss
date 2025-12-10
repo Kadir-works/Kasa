@@ -1,0 +1,21 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  height: 209px;          // ⬅️ hauteur exacte demandée
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; // centre verticalement
+  gap: 20px;               // espace entre logo et texte
+  padding: 20px;           // pour éviter que ça colle au bord en mobile
+  text-align: center;
+
+  &__logo {
+    height: 40px;  // ajuste selon la taille du logo dans  la maquette
+    width: auto;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}

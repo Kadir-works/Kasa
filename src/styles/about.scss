@@ -1,0 +1,17 @@
+.about {
+  max-width: 1240px;      // même largeur que le reste du site
+  margin: 0 auto 40px;
+  padding: 0 0 40px;
+
+  &__collapses {
+    max-width: 1023px;    // largeur des blocs sur la maquette
+    margin: 40px auto 0;  // centré sous la bannière
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .collapse {
+      width: 100%;
+    }
+  }
+}
