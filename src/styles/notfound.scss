@@ -1,0 +1,51 @@
+.notfound {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 80px 20px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+
+    @media (max-width: 768px) {
+      padding: 60px 20px 80px;
+      gap: 30px;
+    }
+
+  &__code {
+    font-size: 288px;      // énorme comme maquette
+    font-weight: 700;
+    color: #ff6060;
+    line-height: 1;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 96px;    // moitié moins sur mobile
+  }
+}
+
+  &__text {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 1.4;
+    max-width: 260px;
+    }
+
+  }
+
+  &__link {
+    font-size: 18px;
+    color: #000;
+    text-decoration: underline;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

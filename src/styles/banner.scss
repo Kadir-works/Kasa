@@ -13,6 +13,11 @@
   background-size: cover;
   background-position: center;
 
+  @media (max-width: 768px) {
+    height: 111px;
+    margin: 0px auto;
+    }
+
   &__overlay {
     position: absolute;
     inset: 0;
@@ -22,14 +27,15 @@
   &__text {
     position: relative;
     color: #fff;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 700;
     text-align: center;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       font-size: 24px;
       text-align: left;
-      padding: 0 16px;
+      padding: 0 32px 0 0;
+      max-width: 265px; 
     }
   }
 }

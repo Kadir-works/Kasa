@@ -3,6 +3,11 @@
   margin: 0 auto 40px;
   padding: 0 0 40px;
 
+  @media (max-width: 768px) {
+      margin: 0 ;
+      padding: 0 ;
+    }
+
   &__title-block {
     margin-top: 20px;
     display: flex;
@@ -21,12 +26,21 @@
   }
 
   &__title {
-    font-size: 32px;
+    font-size: 36px;
     color: #ff6060;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &__location {
     font-size: 18px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin: 0;
+    }
   }
 
   &__tags {
@@ -62,6 +76,10 @@
     color: #ff6060;
     font-family: "Montserrat", sans-serif;
     line-height: 143%;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   &__host-picture {
@@ -69,6 +87,11 @@
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   &__rating {
@@ -85,6 +108,19 @@
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
+
+    // ✅ Texte du collapse (Description / Équipements)
+    .collapse__content {
+      font-size: 18px;
+      line-height: 1.4;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    // ✅ Liste des équipements
+    ul li {
+      font-size: 18px;
+      line-height: 1.4;
+    }
   }
 }
 
@@ -94,10 +130,20 @@
   border-radius: 10px;
   padding: 5px 15px;
   font-size: 14px;
+
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 }
 
 .rating__star {
   width: 24px;
   height: 24px;
+
+  @media (max-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
 }
 

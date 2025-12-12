@@ -18,10 +18,11 @@
       padding: 20px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
       padding: 0;
       background-color: transparent;
+      margin-top: 20px;
     }
   }
 }

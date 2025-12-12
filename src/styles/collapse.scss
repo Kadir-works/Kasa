@@ -16,6 +16,17 @@
     font-size: 24px;                
     font-weight: 700;              
     font-family: "Montserrat", sans-serif;
+
+    @media (max-width: 768px) {
+      height: 30px;              // ✅ hauteur maquette mobile
+    padding: 0 15px;           // pas de padding vertical
+    display: flex;
+    align-items: center;       // centrage vertical du texte
+    justify-content: space-between;
+
+    font-size: 13px;           // cohérent mobile
+    font-weight: 700; 
+    }
   }
 
   &__title {
@@ -35,6 +46,10 @@
     width: 32px;
     height: 32px;
     transition: transform 0.3s ease;
+    @media (max-width: 768px) {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &__icon.open {

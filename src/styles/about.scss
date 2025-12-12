@@ -3,6 +3,12 @@
   margin: 0 auto 40px;
   padding: 0 0 40px;
 
+  @media (max-width: 768px) {
+    font-size: 12px; 
+    margin: 0 auto;
+    padding: 0;
+  }
+
   &__collapses {
     max-width: 1023px;    // largeur des blocs sur la maquette
     margin: 40px auto 0;  // centré sous la bannière

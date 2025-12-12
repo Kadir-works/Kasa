@@ -7,6 +7,10 @@
   color: #fff;
   height: 340px;
 
+  @media (max-width: 768px) {
+    height: 255px;
+  }
+
   &__image-wrapper {
     position: relative;
     width: 100%;
