@@ -114,12 +114,21 @@
       font-size: 18px;
       line-height: 1.4;
       font-family: "Montserrat", sans-serif;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+
     }
 
     // ✅ Liste des équipements
     ul li {
       font-size: 18px;
       line-height: 1.4;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
   }
 }
