@@ -16,6 +16,12 @@
     flex-direction: column;
     gap: 30px;
 
+
+    @media (max-width: 768px) {
+      margin: 19px auto 0; 
+      gap: 20px;
+    }
+
     .collapse {
       width: 100%;
     }

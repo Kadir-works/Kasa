@@ -15,7 +15,7 @@ function Footer() {
       <img src={logoFooter} alt="Kasa" className="footer__logo" />
 
       {/* Texte de copyright */}
-      <p className="footer__text">© 2020 Kasa. All rights reserved</p>
+      <p className="footer__text">© 2020 Kasa. All <span>rights reserved</span></p>
     </footer>
   );
 }
